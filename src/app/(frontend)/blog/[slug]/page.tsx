@@ -11,7 +11,7 @@ const post = {
   title: "How I Made the Dune Purse in 6 Hours",
   excerpt:
     "Every knot tells a story. This is the journey of creating our bestselling Dune purse, from inspiration to the final stitch.",
-  coverImage: "/placeholder.svg?height=800&width=1200&text=Dune Purse Creation",
+  coverImage: "/blog/1.jpg",
   date: "April 8, 2025",
   author: "Andreea Bircea",
   authorImage: "/placeholder.svg?height=200&width=200&text=Andreea",
@@ -81,7 +81,7 @@ const post = {
       title: "The Knots I Love Most and Why",
       excerpt:
         "There's something magical about the way threads intertwine to create something both beautiful and functional. These are the knots that inspire me daily.",
-      coverImage: "/placeholder.svg?height=800&width=1200&text=Favorite Knots",
+      coverImage: "/blog/2.jpg",
       date: "March 25, 2025",
       category: "Craft Insights",
     },
@@ -90,7 +90,7 @@ const post = {
       title: "What Makes a Brea Purse Different from Factory Bags",
       excerpt:
         "In a world of mass production, handcrafted items tell a different story. Here's why each Brea purse carries a piece of soul that factory items simply can't replicate.",
-      coverImage: "/placeholder.svg?height=800&width=1200&text=Handmade Difference",
+      coverImage: "/blog/4.jpg",
       date: "February 28, 2025",
       category: "Craft Philosophy",
     },

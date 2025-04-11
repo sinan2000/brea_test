@@ -12,7 +12,7 @@ const blogPosts = [
     title: "How I Made the Dune Purse in 6 Hours",
     excerpt:
       "Every knot tells a story. This is the journey of creating our bestselling Dune purse, from inspiration to the final stitch.",
-    coverImage: "/placeholder.svg?height=800&width=1200&text=Dune Purse Creation",
+    coverImage: "/blog/1.jpg",
     date: "April 8, 2025",
     author: "Andreea Bircea",
     category: "Behind the Scenes",
@@ -23,7 +23,7 @@ const blogPosts = [
     title: "The Knots I Love Most and Why",
     excerpt:
       "There's something magical about the way threads intertwine to create something both beautiful and functional. These are the knots that inspire me daily.",
-    coverImage: "/placeholder.svg?height=800&width=1200&text=Favorite Knots",
+    coverImage: "/blog/2.jpg",
     date: "March 25, 2025",
     author: "Andreea Bircea",
     category: "Craft Insights",
@@ -34,7 +34,7 @@ const blogPosts = [
     title: "We Sourced Sustainable Thread from Brașov!",
     excerpt:
       "Our journey to find the perfect materials led us to the mountains of Transylvania, where tradition meets sustainability.",
-    coverImage: "/placeholder.svg?height=800&width=1200&text=Sustainable Thread",
+    coverImage: "/blog/3.jpg",
     date: "March 12, 2025",
     author: "Andreea Bircea",
     category: "Sustainability",
@@ -45,7 +45,7 @@ const blogPosts = [
     title: "What Makes a Brea Purse Different from Factory Bags",
     excerpt:
       "In a world of mass production, handcrafted items tell a different story. Here's why each Brea purse carries a piece of soul that factory items simply can't replicate.",
-    coverImage: "/placeholder.svg?height=800&width=1200&text=Handmade Difference",
+    coverImage: "/blog/4.jpg",
     date: "February 28, 2025",
     author: "Andreea Bircea",
     category: "Craft Philosophy",
@@ -56,7 +56,7 @@ const blogPosts = [
     title: "The Coastal Inspiration Behind Our Spring Collection",
     excerpt:
       "How a weekend by the Black Sea sparked an entire collection of designs that capture the essence of gentle waves and sandy shores.",
-    coverImage: "/placeholder.svg?height=800&width=1200&text=Spring Collection",
+    coverImage: "/blog/5.jpg",
     date: "February 15, 2025",
     author: "Andreea Bircea",
     category: "Design Stories",
