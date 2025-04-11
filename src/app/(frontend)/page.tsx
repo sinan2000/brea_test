@@ -32,7 +32,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[500px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=1000&width=800"
+                  src="/about.jpg"
                   alt="Artisan crafting a knotted purse"
                   fill
                   className="object-cover"
@@ -74,7 +74,7 @@ export default function Home() {
                 <div className="text-center">
                   <div className="relative h-64 w-full rounded-lg overflow-hidden mb-4">
                     <Image
-                      src="/placeholder.svg?height=600&width=400&text=Andreea's Childhood"
+                      src="/child.webp"
                       alt="Andreea learning to knot as a child"
                       fill
                       className="object-cover"
@@ -90,7 +90,7 @@ export default function Home() {
                 <div className="text-center">
                   <div className="relative h-64 w-full rounded-lg overflow-hidden mb-4">
                     <Image
-                      src="/placeholder.svg?height=600&width=400&text=Workshop"
+                      src="/workshop.webp"
                       alt="Andreea in her workshop"
                       fill
                       className="object-cover"
@@ -106,7 +106,7 @@ export default function Home() {
                 <div className="text-center">
                   <div className="relative h-64 w-full rounded-lg overflow-hidden mb-4">
                     <Image
-                      src="/placeholder.svg?height=600&width=400&text=Philosophy"
+                      src="/philo.jpg"
                       alt="Close-up of intricate knotwork"
                       fill
                       className="object-cover"
@@ -129,7 +129,7 @@ export default function Home() {
                 <div className="flex justify-center items-center mt-6">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden mr-4">
                     <Image
-                      src="/placeholder.svg?height=200&width=200&text=Andreea"
+                      src="/me.jpg"
                       alt="Andreea Bircea"
                       fill
                       className="object-cover"
@@ -242,7 +242,7 @@ export default function Home() {
                 <div key={index} className="group">
                   <div className="relative h-[400px] mb-4 overflow-hidden rounded-lg">
                     <Image
-                      src={`/placeholder.svg?height=800&width=600&text=${product.name}`}
+                      src={`/${index + 1}.jpg`}
                       alt={product.name}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -329,7 +329,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="relative h-[500px] rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=1000&width=800&text=Packaging"
+                    src="/unbox.jpg"
                     alt="Brea Knots packaging experience"
                     fill
                     className="object-cover"
@@ -519,7 +519,9 @@ export default function Home() {
               <h2 className="font-serif text-2xl text-[#3c3a38]">Follow Our Journey</h2>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-3 gap-4">
+              {/* 
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {[1, 2, 3, 4, 5, 6].map((item) => (
                 <div key={item} className="relative aspect-square overflow-hidden rounded-lg">
                   <Image
@@ -530,6 +532,29 @@ export default function Home() {
                   />
                 </div>
               ))}
+                */}
+              <div className="relative overflow-hidden rounded-lg">
+                <video autoPlay loop muted className="object-cover hover:scale-105 transition-transform duration-500">
+                  <source src="/post3.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div className="relative overflow-hidden rounded-lg">
+                <video autoPlay loop muted className="object-cover hover:scale-105 transition-transform duration-500">
+                  <source src="/post2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div className="relative overflow-hidden rounded-lg">
+                <Image
+                  src="/post1.jpg"
+                  alt="Instagram post 1"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
             </div>
           </div>
         </section>
