@@ -158,34 +158,6 @@ const filterOptions = {
 export default function ProductsPage() {
   return (
     <div className="flex min-h-screen flex-col bg-[#f9f6f2]">
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-serif text-[#3c3a38] hover:opacity-90">
-            Brea Knots
-          </Link>
-          <div className="hidden md:flex items-center space-x-6 text-[#3c3a38]">
-            <Link href="/" className="text-sm hover:underline">
-              Home
-            </Link>
-            <Link href="/products" className="text-sm font-medium border-b border-[#d4a89a]">
-              Products
-            </Link>
-            <Link href="#about" className="text-sm hover:underline">
-              About
-            </Link>
-            <Link href="#contact" className="text-sm hover:underline">
-              Contact
-            </Link>
-          </div>
-          <Button
-            variant="outline"
-            className="rounded-full border-[#d4a89a] text-[#d4a89a] hover:bg-[#d4a89a] hover:text-white"
-          >
-            Join the List
-          </Button>
-        </nav>
-      </header>
-
       <main className="flex-1 py-8 md:py-12">
         <div className="container mx-auto px-4">
           {/* Header + Drop Context */}

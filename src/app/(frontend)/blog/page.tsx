@@ -14,7 +14,7 @@ const blogPosts = [
       "Every knot tells a story. This is the journey of creating our bestselling Dune purse, from inspiration to the final stitch.",
     coverImage: "/placeholder.svg?height=800&width=1200&text=Dune Purse Creation",
     date: "April 8, 2025",
-    author: "Elena Brea",
+    author: "Andreea Bircea",
     category: "Behind the Scenes",
     featured: true,
   },
@@ -25,7 +25,7 @@ const blogPosts = [
       "There's something magical about the way threads intertwine to create something both beautiful and functional. These are the knots that inspire me daily.",
     coverImage: "/placeholder.svg?height=800&width=1200&text=Favorite Knots",
     date: "March 25, 2025",
-    author: "Elena Brea",
+    author: "Andreea Bircea",
     category: "Craft Insights",
     featured: false,
   },
@@ -36,7 +36,7 @@ const blogPosts = [
       "Our journey to find the perfect materials led us to the mountains of Transylvania, where tradition meets sustainability.",
     coverImage: "/placeholder.svg?height=800&width=1200&text=Sustainable Thread",
     date: "March 12, 2025",
-    author: "Elena Brea",
+    author: "Andreea Bircea",
     category: "Sustainability",
     featured: false,
   },
@@ -47,7 +47,7 @@ const blogPosts = [
       "In a world of mass production, handcrafted items tell a different story. Here's why each Brea purse carries a piece of soul that factory items simply can't replicate.",
     coverImage: "/placeholder.svg?height=800&width=1200&text=Handmade Difference",
     date: "February 28, 2025",
-    author: "Elena Brea",
+    author: "Andreea Bircea",
     category: "Craft Philosophy",
     featured: false,
   },
@@ -58,7 +58,7 @@ const blogPosts = [
       "How a weekend by the Black Sea sparked an entire collection of designs that capture the essence of gentle waves and sandy shores.",
     coverImage: "/placeholder.svg?height=800&width=1200&text=Spring Collection",
     date: "February 15, 2025",
-    author: "Elena Brea",
+    author: "Andreea Bircea",
     category: "Design Stories",
     featured: false,
   },
@@ -72,37 +72,6 @@ const otherPosts = blogPosts.filter((post) => post.id !== featuredPost.id)
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-[#f9f6f2]">
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-serif text-[#3c3a38] hover:opacity-90">
-            Brea Knots
-          </Link>
-          <div className="hidden md:flex items-center space-x-6 text-[#3c3a38]">
-            <Link href="/" className="text-sm hover:underline">
-              Home
-            </Link>
-            <Link href="/products" className="text-sm hover:underline">
-              Products
-            </Link>
-            <Link href="/blog" className="text-sm font-medium border-b border-[#d4a89a]">
-              Journal
-            </Link>
-            <Link href="#about" className="text-sm hover:underline">
-              About
-            </Link>
-            <Link href="#contact" className="text-sm hover:underline">
-              Contact
-            </Link>
-          </div>
-          <Button
-            variant="outline"
-            className="rounded-full border-[#d4a89a] text-[#d4a89a] hover:bg-[#d4a89a] hover:text-white"
-          >
-            Join the List
-          </Button>
-        </nav>
-      </header>
-
       <main className="container mx-auto px-4 py-8 md:py-12">
         <div className="text-center mb-12">
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#3c3a38] mb-4">The Brea Journal</h1>

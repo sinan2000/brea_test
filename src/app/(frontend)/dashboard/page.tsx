@@ -886,28 +886,6 @@ export default function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-[#f9f6f2]">
-      <header className="container mx-auto px-4 py-6 border-b border-[#e9e2d9]">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-serif text-[#3c3a38] hover:opacity-90">
-            Brea Knots
-          </Link>
-          <div className="hidden md:flex items-center space-x-6 text-[#3c3a38]">
-            <Link href="/" className="text-sm hover:underline">
-              Home
-            </Link>
-            <Link href="/products" className="text-sm hover:underline">
-              Products
-            </Link>
-            <Link href="#about" className="text-sm hover:underline">
-              About
-            </Link>
-            <Link href="#contact" className="text-sm hover:underline">
-              Contact
-            </Link>
-          </div>
-        </div>
-      </header>
-
       <div className="container mx-auto px-4 py-8 md:py-12">
         <div className="mb-6">
           <h1 className="font-serif text-3xl text-[#3c3a38] mb-2">My Account</h1>

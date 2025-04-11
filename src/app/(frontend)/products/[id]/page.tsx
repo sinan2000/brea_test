@@ -102,37 +102,6 @@ export default function ProductDetailPage() {
 
   return (
     <div className="min-h-screen bg-[#f9f6f2]">
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-serif text-[#3c3a38] hover:opacity-90">
-            Brea Knots
-          </Link>
-          <div className="hidden md:flex items-center space-x-6 text-[#3c3a38]">
-            <Link href="/" className="text-sm hover:underline">
-              Home
-            </Link>
-            <Link href="/products" className="text-sm hover:underline">
-              Products
-            </Link>
-            <Link href="#about" className="text-sm hover:underline">
-              About
-            </Link>
-            <Link href="#contact" className="text-sm hover:underline">
-              Contact
-            </Link>
-          </div>
-          <Link href="/checkout">
-            <Button
-              variant="outline"
-              className="rounded-full border-[#d4a89a] text-[#d4a89a] hover:bg-[#d4a89a] hover:text-white"
-            >
-              <ShoppingBag className="h-4 w-4 mr-2" />
-              Cart (0)
-            </Button>
-          </Link>
-        </nav>
-      </header>
-
       <main className="container mx-auto px-4 py-8 md:py-12">
         {/* Breadcrumb */}
         <div className="mb-6">

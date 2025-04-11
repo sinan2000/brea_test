@@ -10,34 +10,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-[#f9f6f2]">
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-serif text-[#3c3a38] hover:opacity-90">
-            Brea Knots
-          </Link>
-          <div className="hidden md:flex items-center space-x-6 text-[#3c3a38]">
-            <Link href="#about" className="text-sm hover:underline">
-              About
-            </Link>
-            <Link href="#drops" className="text-sm hover:underline">
-              Drops
-            </Link>
-            <Link href="#collection" className="text-sm hover:underline">
-              Collection
-            </Link>
-            <Link href="#contact" className="text-sm hover:underline">
-              Contact
-            </Link>
-          </div>
-          <Button
-            variant="outline"
-            className="rounded-full border-[#d4a89a] text-[#d4a89a] hover:bg-[#d4a89a] hover:text-white"
-          >
-            Join the List
-          </Button>
-        </nav>
-      </header>
-
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[80vh] overflow-hidden">
@@ -102,15 +74,15 @@ export default function Home() {
                 <div className="text-center">
                   <div className="relative h-64 w-full rounded-lg overflow-hidden mb-4">
                     <Image
-                      src="/placeholder.svg?height=600&width=400&text=Elena's Childhood"
-                      alt="Elena learning to knot as a child"
+                      src="/placeholder.svg?height=600&width=400&text=Andreea's Childhood"
+                      alt="Andreea learning to knot as a child"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <h3 className="font-serif text-xl text-[#3c3a38] mb-2">The Beginning</h3>
                   <p className="text-sm text-[#3c3a38]/80">
-                    At age 8, Elena learned her first knots from her grandmother, who crafted fishing nets in a small
+                    At age 8, Andreea learned her first knots from her grandmother, who crafted fishing nets in a small
                     Romanian coastal village.
                   </p>
                 </div>
@@ -119,14 +91,14 @@ export default function Home() {
                   <div className="relative h-64 w-full rounded-lg overflow-hidden mb-4">
                     <Image
                       src="/placeholder.svg?height=600&width=400&text=Workshop"
-                      alt="Elena in her workshop"
+                      alt="Andreea in her workshop"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <h3 className="font-serif text-xl text-[#3c3a38] mb-2">The Workshop</h3>
                   <p className="text-sm text-[#3c3a38]/80">
-                    Today, each Brea purse is created in a sunlit corner of Elena's home, surrounded by spools of
+                    Today, each Brea purse is created in a sunlit corner of Andreea's home, surrounded by spools of
                     natural fibers and sketches of new designs.
                   </p>
                 </div>
@@ -157,14 +129,14 @@ export default function Home() {
                 <div className="flex justify-center items-center mt-6">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden mr-4">
                     <Image
-                      src="/placeholder.svg?height=200&width=200&text=Elena"
-                      alt="Elena Brea"
+                      src="/placeholder.svg?height=200&width=200&text=Andreea"
+                      alt="Andreea Bircea"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="text-left">
-                    <p className="font-serif text-[#3c3a38]">Elena Brea</p>
+                    <p className="font-serif text-[#3c3a38]">Andreea Bircea</p>
                     <p className="text-sm text-[#3c3a38]/70">Founder & Artisan</p>
                   </div>
                 </div>
@@ -384,7 +356,7 @@ export default function Home() {
                     <div>
                       <h3 className="font-serif text-xl text-[#3c3a38] mb-2">Personal Note</h3>
                       <p className="text-[#3c3a38]/80">
-                        Inside each package is a handwritten note from Elena, thanking you for supporting handmade craft
+                        Inside each package is a handwritten note from Andreea, thanking you for supporting handmade craft
                         and sharing the story behind your specific purse.
                       </p>
                     </div>

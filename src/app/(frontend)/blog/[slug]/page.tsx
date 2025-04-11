@@ -13,10 +13,10 @@ const post = {
     "Every knot tells a story. This is the journey of creating our bestselling Dune purse, from inspiration to the final stitch.",
   coverImage: "/placeholder.svg?height=800&width=1200&text=Dune Purse Creation",
   date: "April 8, 2025",
-  author: "Elena Brea",
-  authorImage: "/placeholder.svg?height=200&width=200&text=Elena",
+  author: "Andreea Bircea",
+  authorImage: "/placeholder.svg?height=200&width=200&text=Andreea",
   authorBio:
-    "Elena is the founder and lead artisan at Brea Knots. With over 10 years of experience in traditional knotting techniques, she brings a unique blend of heritage and modern design to each piece.",
+    "Andreea is the founder and lead artisan at Brea Knots. With over 10 years of experience in traditional knotting techniques, she brings a unique blend of heritage and modern design to each piece.",
   category: "Behind the Scenes",
   content: `
     <p>The Dune Knot purse began as a simple idea during a quiet weekend by the Black Sea. As I watched the gentle waves shape the shoreline, I was struck by how the sand formed perfect, flowing patterns. I wanted to capture that same sense of natural harmony – structured yet organic, simple yet intricate.</p>
@@ -100,37 +100,6 @@ const post = {
 export default function BlogPostPage() {
   return (
     <div className="min-h-screen bg-[#f9f6f2]">
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-serif text-[#3c3a38] hover:opacity-90">
-            Brea Knots
-          </Link>
-          <div className="hidden md:flex items-center space-x-6 text-[#3c3a38]">
-            <Link href="/" className="text-sm hover:underline">
-              Home
-            </Link>
-            <Link href="/products" className="text-sm hover:underline">
-              Products
-            </Link>
-            <Link href="/blog" className="text-sm font-medium border-b border-[#d4a89a]">
-              Journal
-            </Link>
-            <Link href="#about" className="text-sm hover:underline">
-              About
-            </Link>
-            <Link href="#contact" className="text-sm hover:underline">
-              Contact
-            </Link>
-          </div>
-          <Button
-            variant="outline"
-            className="rounded-full border-[#d4a89a] text-[#d4a89a] hover:bg-[#d4a89a] hover:text-white"
-          >
-            Join the List
-          </Button>
-        </nav>
-      </header>
-
       <main className="container mx-auto px-4 py-8 md:py-12">
         <div className="mb-6">
           <Link href="/blog" className="inline-flex items-center text-[#d4a89a] hover:underline">

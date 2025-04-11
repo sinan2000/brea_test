@@ -110,42 +110,6 @@ export default function CheckoutPage() {
 
   return (
     <div className="min-h-screen bg-[#f9f6f2]">
-      <header className="container mx-auto px-4 py-6 border-b border-[#e9e2d9]">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-serif text-[#3c3a38] hover:opacity-90">
-            Brea Knots
-          </Link>
-          <div className="hidden md:flex items-center space-x-8">
-            {steps.map((step, index) => (
-              <div key={step.id} className="flex items-center">
-                <div
-                  className={`flex items-center justify-center h-6 w-6 rounded-full text-xs ${currentStep === step.id
-                      ? "bg-[#d4a89a] text-white"
-                      : steps.findIndex((s) => s.id === currentStep) > index
-                        ? "bg-[#d4a89a] text-white"
-                        : "bg-[#e9e2d9] text-[#3c3a38]"
-                    }`}
-                >
-                  {steps.findIndex((s) => s.id === currentStep) > index ? <Check className="h-3 w-3" /> : index + 1}
-                </div>
-                <span
-                  className={`ml-2 text-sm ${currentStep === step.id ? "text-[#3c3a38] font-medium" : "text-[#3c3a38]/70"
-                    }`}
-                >
-                  {step.name}
-                </span>
-                {index < steps.length - 1 && <div className="mx-2 h-px w-4 bg-[#e9e2d9]"></div>}
-              </div>
-            ))}
-          </div>
-          <div className="md:hidden">
-            <span className="text-sm text-[#3c3a38]">
-              Step {steps.findIndex((step) => step.id === currentStep) + 1} of {steps.length}
-            </span>
-          </div>
-        </div>
-      </header>
-
       <main className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Main Checkout Flow */}
