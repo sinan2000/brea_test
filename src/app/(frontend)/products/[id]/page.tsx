@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Heart, Minus, Plus, ShoppingBag } from "lucide-react"
+import { ArrowLeft, Heart, Minus, Plus } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
@@ -41,25 +41,25 @@ const product = {
   images: [
     {
       id: 1,
-      src: "/placeholder.svg?height=1200&width=800&text=Dune Knot Main",
+      src: "/about.jpg",
       alt: "Dune Knot purse front view",
       type: "main",
     },
     {
       id: 2,
-      src: "/placeholder.svg?height=1200&width=800&text=Dune Knot Detail",
+      src: "/hero.jpg",
       alt: "Close-up of knot detail",
       type: "detail",
     },
     {
       id: 3,
-      src: "/placeholder.svg?height=1200&width=800&text=Dune Knot Size",
+      src: "/blog/3.jpg",
       alt: "Size comparison with hand",
       type: "size",
     },
     {
       id: 4,
-      src: "/placeholder.svg?height=1200&width=800&text=Dune Knot Lifestyle",
+      src: "/blog/1.jpg",
       alt: "Dune Knot being worn",
       type: "lifestyle",
     },
@@ -381,25 +381,25 @@ export default function ProductDetailPage() {
                 id: 1,
                 name: "Coastal Weave",
                 price: 159,
-                image: "/placeholder.svg?height=600&width=600&text=Coastal Weave",
+                image: "/blog/1.jpg",
               },
               {
                 id: 2,
                 name: "Blush Braid",
                 price: 179,
-                image: "/placeholder.svg?height=600&width=600&text=Blush Braid",
+                image: "/blog/2.jpg",
               },
               {
                 id: 3,
                 name: "Amber Weave",
                 price: 169,
-                image: "/placeholder.svg?height=600&width=600&text=Amber Weave",
+                image: "/blog/3.jpg",
               },
               {
                 id: 4,
                 name: "Terra Twist",
                 price: 199,
-                image: "/placeholder.svg?height=600&width=600&text=Terra Twist",
+                image: "/blog/4.jpg",
               },
             ].map((relatedProduct) => (
               <Link href={`/products/${relatedProduct.id}`} key={relatedProduct.id}>

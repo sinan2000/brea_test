@@ -43,6 +43,36 @@ import {
 import { useToast } from "@/hooks/use-toast"
 import { useMobile } from "@/hooks/use-mobile"
 
+type Order = {
+  id: string
+  date: string
+  status: "Delivered" | "Processing" | "Pending" // add more if needed
+  total: number
+  items: {
+    id: number
+    name: string
+    color: string
+    size: string
+    price: number
+    image: string
+  }[]
+  tracking?: string
+  deliveredDate?: string
+  shippingAddress: {
+    name: string
+    street: string
+    city: string
+    state: string
+    zip: string
+    country: string
+  }
+  paymentMethod: {
+    type: string
+    last4: string
+  }
+}
+
+
 // Mock user data
 const user = {
   name: "Maria Johnson",
@@ -52,7 +82,7 @@ const user = {
 }
 
 // Mock orders data
-const orders = [
+const orders: Order[] = [
   {
     id: "BK-2025-04-01",
     date: "April 1, 2025",
@@ -164,7 +194,7 @@ export default function DashboardPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [showNewPassword, setShowNewPassword] = useState(false)
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
-  const [selectedOrder, setSelectedOrder] = useState<any>(null)
+  const [selectedOrder, setSelectedOrder] = useState<Order | null>(null)
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false)
   const { toast } = useToast()
   const router = useRouter()
@@ -186,7 +216,7 @@ export default function DashboardPage() {
     router.push("/")
   }
 
-  const handleViewOrderDetails = (order: any) => {
+  const handleViewOrderDetails = (order: Order) => {
     setSelectedOrder(order)
   }
 
@@ -416,7 +446,7 @@ export default function DashboardPage() {
               <div>
                 <h3 className="font-medium text-[#3c3a38] mb-3">Items</h3>
                 <div className="space-y-4">
-                  {selectedOrder.items.map((item: any) => (
+                  {selectedOrder.items.map((item: { id: number; name: string; color: string; size: string; price: number; image: string }) => (
                     <div key={item.id} className="flex gap-4">
                       <div className="relative h-16 w-16 rounded-md overflow-hidden flex-shrink-0">
                         <Image src={item.image || "/placeholder.svg"} alt={item.name} fill className="object-cover" />

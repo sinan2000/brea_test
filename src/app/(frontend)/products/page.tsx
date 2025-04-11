@@ -33,10 +33,7 @@ const products = [
     remaining: 1,
     featured: true,
     instagram: true,
-    images: [
-      "/placeholder.svg?height=600&width=600&text=Dune Knot",
-      "/placeholder.svg?height=600&width=600&text=Dune Knot Alt",
-    ],
+    images: ["/about.jpg"],
   },
   {
     id: 2,
@@ -48,10 +45,7 @@ const products = [
     status: "Sold Out",
     featured: false,
     instagram: false,
-    images: [
-      "/placeholder.svg?height=600&width=600&text=Midnight Flow",
-      "/placeholder.svg?height=600&width=600&text=Midnight Flow Alt",
-    ],
+    images: ["/hero.jpg"],
   },
   {
     id: 3,
@@ -64,10 +58,7 @@ const products = [
     remaining: 2,
     featured: true,
     instagram: true,
-    images: [
-      "/placeholder.svg?height=600&width=600&text=Coastal Weave",
-      "/placeholder.svg?height=600&width=600&text=Coastal Weave Alt",
-    ],
+    images: ["/p1.jpg"],
   },
   {
     id: 4,
@@ -79,10 +70,7 @@ const products = [
     status: "Coming Soon",
     featured: false,
     instagram: false,
-    images: [
-      "/placeholder.svg?height=600&width=600&text=Terra Twist",
-      "/placeholder.svg?height=600&width=600&text=Terra Twist Alt",
-    ],
+    images: ["/p2.jpg"],
   },
   {
     id: 5,
@@ -95,55 +83,7 @@ const products = [
     remaining: 1,
     featured: true,
     instagram: true,
-    images: [
-      "/placeholder.svg?height=600&width=600&text=Blush Braid",
-      "/placeholder.svg?height=600&width=600&text=Blush Braid Alt",
-    ],
-  },
-  {
-    id: 6,
-    name: "Sage Spiral",
-    price: 229,
-    color: "Natural",
-    size: "Large",
-    style: "Shoulder",
-    status: "Sold Out",
-    featured: false,
-    instagram: false,
-    images: [
-      "/placeholder.svg?height=600&width=600&text=Sage Spiral",
-      "/placeholder.svg?height=600&width=600&text=Sage Spiral Alt",
-    ],
-  },
-  {
-    id: 7,
-    name: "Amber Weave",
-    price: 169,
-    color: "Mixed",
-    size: "Small",
-    style: "Clutch",
-    status: "Available",
-    featured: true,
-    instagram: true,
-    images: [
-      "/placeholder.svg?height=600&width=600&text=Amber Weave",
-      "/placeholder.svg?height=600&width=600&text=Amber Weave Alt",
-    ],
-  },
-  {
-    id: 8,
-    name: "Linen Loop",
-    price: 209,
-    color: "Natural",
-    size: "Medium",
-    style: "Handle Loop",
-    status: "Coming Soon",
-    featured: false,
-    instagram: false,
-    images: [
-      "/placeholder.svg?height=600&width=600&text=Linen Loop",
-      "/placeholder.svg?height=600&width=600&text=Linen Loop Alt",
-    ],
+    images: ["/p3.jpg"],
   },
 ]
 
@@ -357,6 +297,9 @@ export default function ProductsPage() {
                 </DialogTrigger>
 
                 <DialogContent className="sm:max-w-[900px] p-0 overflow-hidden">
+                  <DialogHeader className="sr-only">
+                    <DialogTitle>{product.name}</DialogTitle>
+                  </DialogHeader>
                   <div className="grid md:grid-cols-2">
                     {/* Product Images */}
                     <div className="relative aspect-square md:aspect-auto md:h-full bg-[#f9f6f2]">
