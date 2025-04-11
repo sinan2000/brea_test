@@ -12,17 +12,19 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-[#f9f6f2]">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[80vh] overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-90">
-            <div className="absolute inset-0 bg-[#3c3a38] opacity-20"></div>
-          </div>
+        <section className="relative h-[80vh] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/hero.jpg')" }}>
+          <div className="absolute inset-0 bg-[#3c3a38] opacity-20"></div>
           <div className="container relative mx-auto flex h-full flex-col items-center justify-center px-4 text-center">
-            <h1 className="font-serif text-4xl md:text-6xl text-white mb-4">Handmade purses, tied with patience.</h1>
+            <h1 className="font-serif text-4xl md:text-6xl text-white mb-4">
+              Handmade purses, tied with patience.
+            </h1>
             <p className="text-lg text-white mb-8">Only available in limited releases.</p>
-            <Button className="rounded-full bg-[#d4a89a] hover:bg-[#c89485] text-white px-8 py-6">
-              See Upcoming Drop
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <a href="#drops">
+              <Button className="rounded-full bg-[#d4a89a] hover:bg-[#c89485] text-white px-8 py-6">
+                See Upcoming Drop
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </a>
           </div>
         </section>
 
